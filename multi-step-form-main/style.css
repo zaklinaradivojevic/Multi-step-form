@@ -1,1 +1,84 @@
+body{
+  width:100%;
+  height:100%;
+  background-color:hsl(206, 94%, 87%);
+  font-family:"Ubuntu";
+}
+.form-container{
+   width:900px;
+   height:630px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
+}
+.sidebar {
+  margin-top:3px;
+  margin-right:35px;
+  float: left;
+   width: 25%; 
+   height:600px;
+  background: url('https://raw.githubusercontent.com/zaklinaradivojevic/Multi-step-form/6e02e00559af1ff7a8c9fbd8f19a016821677123/multi-step-form-main/assets/images/bg-sidebar-desktop.svg');
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+   color:hsl(231, 100%, 99%);
+}
+.content {
+  float: right;
+  width: 600px; 
+  height:600px;
+   margin-top:15px;
+   margin-left:10x;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+   color:hsl(213, 96%, 18%);
+}
+.sidebar-btn {
+  display: block;
+  width: 30px;
+  height:30px;
+  margin-left:30px;
+  margin-top:30px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.sidebar-btn:hover {
+  background-color: #ddd;
+   color:hsl(213, 96%, 18%);
+}
+
+.sidebar-btn.active {
+  background-color: white;
+  color:hsl(213, 96%, 18%); 
+}
+
+
+
+
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+  position: absolute;
+  bottom: 0;
+  width:100%;
+}
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+}
