@@ -15,19 +15,26 @@
 <div class="form-container">
   <div class="sidebar">
   <!-- Sidebar start -->
-    <button class="sidebar-btn">1</button>
-  Step 1
-  Your info
+    <div class="sidebar-content">
+      <button class="sidebar-btn" id="step1">1</button>
+       <p class="step">Step 1</p>
+    <p>Your info</p>
+    </div>
+     <div class="sidebar-content">
      <button class="sidebar-btn">2</button>
-  Step 2
-  Select plan
+    <p class="step">Step 2</p>
+    <p>Select plan</p>
+    </div>
+     <div class="sidebar-content">
       <button class="sidebar-btn">3</button>
-  Step 3
-  Add-ons
+    <p class="step">Step 3</p>
+    <p>Add-ons</p>
+    </div>
+     <div class="sidebar-content">
        <button class="sidebar-btn">4</button>
-  Step 4
-  Summary
-
+    <p class="step">Step 4</p>
+    <p>Summary</p>
+    </div>
   <!-- Sidebar end -->
   </div>
   <!-- Step 1 start -->
@@ -35,17 +42,24 @@
   <h1>Personal info</h1>
   <p>Please provide your name, email address, and phone number.</p>
 
-  <label>Name</label>
-  e.g. Stephen King
-
-  <label>Email Address</label>
-  e.g. stephenking@lorem.com
-
- <label>Phone Number</label>
-  e.g. +1 234 567 890
-
-  Next Step
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="e.g. Stephen King" />
   </div>
+
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" placeholder="e.g. stephenking@lorem.com" />
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" placeholder="e.g. +1 234 567 890" />
+  </div>
+
+  <button class="next-button">Next Step</button>
+</div>
+
   </div>
   <!-- Step 1 end -->
 
