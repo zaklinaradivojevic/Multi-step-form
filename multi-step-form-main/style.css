@@ -17,11 +17,11 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  
 }
 .sidebar {
   margin-top:3px;
-  margin-right:-7px;
+  margin-right:640px;
   float: left;
    width: 25%; 
    height:600px;
@@ -42,28 +42,43 @@ body{
   text-transform: uppercase;
   color:hsl(229, 24%, 87%);
 }
-#step1{
-  background-color: hsl(206, 94%, 87%);
-  color:hsl(213, 96%, 18%);
-}
+
 .sidebar-content{
   width:100%;
   height:40px;
   margin-bottom:10px;
   margin-top:30px;
 }
-.content {
+.content{
   float: right;
   width: 600px; 
-  height:600px;
-   margin-top:85px;
-   margin-left:7%;
+  height:500px;
+   margin-top:5px;
+   margin-right:-260px;
   justify-content: center;
   align-items: center;
   text-align:left;
    color:hsl(213, 96%, 18%);
+  flex: 1;
+  position:absolute;
+}
+.content2{
+  float: right;
+  width: 600px; 
+  height:500px;
+   margin-top:55px;
+   margin-left:400px;
+  justify-content: center;
+  align-items: center;
+  text-align:left;
+   color:hsl(213, 96%, 18%);
+  position:absolute;
+   flex: 1;
 }
 .content p{
+  color: hsl(231, 11%, 63%);
+}
+.content2 p{
   color: hsl(231, 11%, 63%);
 }
 label{
@@ -132,14 +147,120 @@ button.next-button:hover {
 }
 
 
+.formStep.show {
+  display: block;
+}
+.select-conteiner{
+  display:flex;
+  margin-top:30px;
+  width:80%;
+  height:auto;
+ 
+}
+.select-plan{
+  width:120px;
+  height:120px;
+  border:1px solid  hsl(229, 24%, 87%);
+  border-radius:5px;
+  padding:10px;
+  margin:5px 10px;
+}
+.switch-container {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  text-align:center;
+  background-color:hsl(231, 100%, 99%);
+  margin-top:20px;
+  width:80%;
+  height:40px;
+}
 
+/* toggle in label designing */
+    .toggle {
+        position : relative ;
+        display : inline-block;
+        width : 30px;
+        height : 15px;
+        background-color: hsl(213, 96%, 18%);
+        border-radius: 30px;
+        margin-bottom:5px;
+        margin-left:19px;
+    }
+ /* After slide changes */
+    .toggle:after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: hsl(0, 0%, 100%);
+        top: 0px; 
+        left: 1px;
+        transition:  all 0.5s;
+    }
+     /* Checkbox checked effect */
+    .checkbox:checked + .toggle::after {
+        left : 15px; 
+    }
+           
+    /* Checkbox checked toggle label bg color */
+    .checkbox:checked + .toggle {
+        background-color: hsl(213, 96%, 18%);
+    }
+           
+    /* Checkbox vanished */
+    .checkbox { 
+        display : none;
+    }
+#monthlyText{
+  float:left;
+  margin-left:-70px;
+  margin-top:-5px;
+}
+#yearlyText{
+   float:right;
+  margin-right:-60px;
+  margin-top:-5px;
+}
+.buttons-container{
+  width:80%;
+  height:70px;
+  margin-top:190px;
+  position:absolute;
+}
+button.back-button{
+  float:left;
+   background-color: transparent;
+   border: none;
+   font-size: 16px;
+   cursor: pointer;
+   margin-top:25px;
+}
+button.next-button2{
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  float:right;
+  margin-top:20px;
+  margin-left:270px;
+}
+
+.active {
+  color: #2196F3;
+}
 
 .attribution { 
     font-size: 11px;
     text-align: center;
-  position: absolute;
-  bottom: 0;
-  width:100%;
+     width:100%;
+    padding: 10px;
+  margin-top:650px;
+  position:absolute;
 }
  .attribution a { 
   color: hsl(228, 45%, 44%); 
