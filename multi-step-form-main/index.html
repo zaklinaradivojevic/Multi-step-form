@@ -38,7 +38,7 @@
   <!-- Sidebar end -->
   </div>
   <!-- Step 1 start -->
-<div class="content">
+<div class="content formStep" data-step="1">
   <h1>Personal info</h1>
   <p>Please provide your name, email address, and phone number.</p>
 
@@ -61,28 +61,50 @@
 </div>
 
   </div>
-  <!-- Step 1 end -->
+   <!-- Step 1 ends-->
 
-  <!-- Step 2 start
+  <!-- Step 2 start-->
+<div class="content2 formStep" data-step="2">
+  <h1>Select your plan</h1>
+  <p>You have the option of monthly or yearly billing.</p>
+<div class="select-conteiner">
+  <div class="select-plan">
+    <img src="https://raw.githubusercontent.com/zaklinaradivojevic/Multi-step-form/e1624205978cfce01197c82b5cf16e0cfa16fa25/multi-step-form-main/assets/images/icon-arcade.svg">
+    <h3> Arcade</h3>
+    <p> $9/mo</p>
+  </div>
 
-  Select your plan
-  You have the option of monthly or yearly billing.
+  <div class="select-plan">
+    <img src="https://raw.githubusercontent.com/zaklinaradivojevic/Multi-step-form/e1624205978cfce01197c82b5cf16e0cfa16fa25/multi-step-form-main/assets/images/icon-advanced.svg">
+    <h3> Advanced</h3>
+    <p>$12/mo</p>
+  </div>
 
-  Arcade
-  $9/mo
-
-  Advanced
-  $12/mo
-
-  Pro
-  $15/mo
-
-  Monthly
-  Yearly
-
-  Go Back
-  Next Step
-
+  <div class="select-plan">
+    <img src="https://raw.githubusercontent.com/zaklinaradivojevic/Multi-step-form/e1624205978cfce01197c82b5cf16e0cfa16fa25/multi-step-form-main/assets/images/icon-pro.svg">
+    <h3> Pro</h3>
+    <p>$15/mo</p>
+  </div>
+  </div>
+  <div class="switch-container">
+  <div class="switch">
+    <input type="checkbox"
+               id="switch"
+               class="checkbox" />
+                
+        <label for="switch"
+               class="toggle">
+            
+  <p id="monthlyText" class="active">Monthly</p>
+  <p id="yearlyText">Yearly</p>
+          </label>
+</div>
+<div class="buttons-container">
+ <button class="next-button2">Next Step</button>
+  <button class="back-button"> Go Back</button>
+</div>
+  </div>
+  </div>
   <!-- Step 2 end -->
 
   <!-- Step 3 start 
