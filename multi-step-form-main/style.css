@@ -253,7 +253,47 @@ button.next-button2{
 .active {
   color: #2196F3;
 }
-
+.add-ons {
+  width:60%;
+  height:50px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top:20px;
+  display: flex;
+  align-items: center;
+}
+.addon-checkbox {
+  float:left;
+  margin-left:-122px;
+  
+}
+.service{
+  margin-top:-5px;
+  margin-left:-100px;
+  white-space: nowrap;
+}
+.acces{
+   margin-top:40px;
+   margin-left:-100px;
+   white-space: nowrap;
+}
+.mo{
+  float:right;
+  margin-bottom:20px;
+  margin-left:20px;
+}
+.mo2{
+   float:right;
+  margin-bottom:20px;
+  margin-left:-30px;
+}
+.buttons-container3{
+  margin-top:20px;
+  width:70%;
+  height:50px;
+  
+}
 .attribution { 
     font-size: 11px;
     text-align: center;
