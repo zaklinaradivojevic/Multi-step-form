@@ -1,3 +1,4 @@
+
 body{
   width:100vw;
   height:100vh;
@@ -62,7 +63,7 @@ body{
   flex: 1;
   position:absolute;
 }
-.content2{
+.content2,.content3{
   float: right;
   width: 600px; 
   height:500px;
@@ -164,7 +165,15 @@ button.next-button:hover {
   border-radius:5px;
   padding:10px;
   margin:5px 10px;
+  cursor:pointer;
 }
+.select-plan:hover{
+   border:1px solid hsl(243, 100%, 62%);
+}
+.selected {
+    background-color: hsl(206, 94%, 87%);
+    border: 1px solid hsl(243, 100%, 62%);
+  }
 .switch-container {
   display: flex;
   align-items: center;
@@ -236,8 +245,10 @@ button.back-button{
    font-size: 16px;
    cursor: pointer;
    margin-top:25px;
+   color:hsl(213, 96%, 18%);
+  font-weight:700;
 }
-button.next-button2{
+button.next-button2,.next-button3{
   background-color: #3498db;
   color: #fff;
   padding: 10px 15px;
@@ -249,10 +260,9 @@ button.next-button2{
   margin-top:20px;
   margin-left:270px;
 }
-
-.active {
-  color: #2196F3;
-}
+  .active {
+    color: hsl(213, 96%, 18%);
+  }
 .add-ons {
   width:60%;
   height:50px;
@@ -262,11 +272,19 @@ button.next-button2{
   margin-top:20px;
   display: flex;
   align-items: center;
+  cursor:pointer;
+}
+.add-ons:hover{
+   border:1px solid hsl(243, 100%, 62%);
 }
 .addon-checkbox {
   float:left;
   margin-left:-122px;
   
+}
+.add-ons.checked {
+  border:1px solid hsl(243, 100%, 62%);
+  background-color: hsl(206, 94%, 87%);
 }
 .service{
   margin-top:-5px;
@@ -278,6 +296,16 @@ button.next-button2{
    margin-left:-100px;
    white-space: nowrap;
 }
+.acces1{
+   margin-top:40px;
+   margin-left:-100px;
+   white-space: nowrap;
+}
+.acces2{
+   margin-top:40px;
+   margin-left:-150px;
+   white-space: nowrap;
+}
 .mo{
   float:right;
   margin-bottom:20px;
@@ -286,13 +314,26 @@ button.next-button2{
 .mo2{
    float:right;
   margin-bottom:20px;
-  margin-left:-30px;
+  margin-left:30px;
+}
+.mo1{
+   margin-left:50px;
 }
 .buttons-container3{
   margin-top:20px;
   width:70%;
   height:50px;
   
+}
+button.back-button3{
+  float:left;
+   background-color: transparent;
+   border: none;
+   font-size: 16px;
+   cursor: pointer;
+   margin-top:-25px;
+   color:hsl(213, 96%, 18%);
+  font-weight:700;
 }
 .attribution { 
     font-size: 11px;
