@@ -1,5 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
+ // Get the Step 4 button element
+  const confirmButtonStep4 = document.querySelector('.next-button4');
+  // Get the Step 4 content element
+  const step4Content = document.querySelector('.content4');
+  // Get the Step 5 content element
+  const step5Content = document.querySelector('.content5');
 
+  // Add a click event listener to the Step 4 button
+  confirmButtonStep4.addEventListener('click', function() {
+     // Hide Step 4 content
+    step4Content.style.display = 'none';
+    // Show Step 5 content when the Step 4 button is clicked
+    step5Content.style.display = 'block';
+  });
+
+ 
+  
 const checkboxes = document.querySelectorAll('.addon-checkbox');
 
   checkboxes.forEach(function(checkbox) {
@@ -113,6 +129,9 @@ const checkboxes = document.querySelectorAll('.addon-checkbox');
   const nextButton = document.querySelector('.next-button');
   const nextButton2 = document.querySelector('.next-button2');
   const backButton = document.querySelector('.back-button');
+  const nextButton3 = document.querySelector('.next-button3'); 
+  const backButton3 = document.querySelector('.back-button3'); 
+
 
   if (nextButton) {
     nextButton.addEventListener('click', nextStep);
@@ -124,6 +143,13 @@ const checkboxes = document.querySelectorAll('.addon-checkbox');
 
   if (backButton) {
     backButton.addEventListener('click', prevStep);
+  }
+if (nextButton3) {
+    nextButton3.addEventListener('click', nextStep); 
+  }
+
+  if (backButton3) {
+    backButton3.addEventListener('click', prevStep);
   }
 
   // Initialize the form by showing the first step
